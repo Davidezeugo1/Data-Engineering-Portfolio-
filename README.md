@@ -1,6 +1,6 @@
-# 🧱 Data Engineering Portfolio
+## Data Engineering Portfolio
 
-👋 Hi, I'm [Your Name] — a data engineer passionate about building scalable data systems and automation.
+👋 Hi, I'm David Ezeugo — a data engineer passionate about building scalable data systems and automation.
 
 This portfolio contains a collection of end-to-end data engineering projects using modern tools like Airflow, Spark, Kafka, and Docker.
 
