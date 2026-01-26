@@ -14,10 +14,10 @@ Persisted into MongoDB as the final sink
 This project serves as the foundation for later streaming pipelines and proves the cluster is production-capable
 
 ✅ Key Leason:
-** Learned to use the correct connector
-** Learned to version control
-** Learned to create the coonection for airflow to spark
-** Learned to debug spark error
+**Learned to use the correct connector
+**Learned to version control
+**Learned to create the coonection for airflow to spark
+**Learned to debug spark error
 
 
 ✅ Key Achievements:
