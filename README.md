@@ -93,7 +93,7 @@ Each project will run on the shared cluster and follow production-oriented patte
 | Project              | Description                                     | Stack                                    |
 | -------------------- | ----------------------------------------------- | ---------------------------------------- |
 | [Simple_spark_to_mongo_pipeline](https://github.com/Davidezeugo1/Data-Engineering-Portfolio-/tree/c7870a2af9a95ab93369cc847d15685ac22f7bd6/Simple_spark_to_mongo_pipeline) | Tragger job to read a simple dataframe and write that dataframe to MongoDB using sparksubmit | Airflow, Python, Mongo, Spark                   |
-| Simple_streaming_pipeline   | A simple streaming pipeline from where data from MongoDB is sent to Kafka, to Spark, then lastly to a MySQL sink. | Kafka, Spark Structured Streaming, MySQL                    |
+| [Simple_streaming_pipeline](https://github.com/Davidezeugo1/Data-Engineering-Portfolio-/blob/c9c074e8516906138256cbed221ba81871af1dd9/project_2/README.md)   | A simple streaming pipeline from where data from MongoDB is sent to Kafka, to Spark, then lastly to a MySQL sink. | Kafka, Spark Structured Streaming, MySQL                    |
 | N/A     | N/A     | N/A |
 | N/A | N/A | N/A   |
 
