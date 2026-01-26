@@ -3,7 +3,7 @@ An in-progress pipeline, but a functional real-time streaming pipeline.
 The pipeline captures MongoDB Change Streams, publishes them to Kafka, processes them with Spark Structured Streaming, and persists the results into MySQL.
 This project represents the transition from batch processing to event-driven architecture.
 
-# Pipeline Flow
+# Pipeline Structure
 * MongoDB Source Connector
   * Uses MongoDB Kafka Connector
   * Streams insert/update/replace events
