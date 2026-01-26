@@ -1,0 +1,5 @@
+# Ignore notebooks
+*.ipynb
+
+#Ignore other Folder
+Moving_data/
