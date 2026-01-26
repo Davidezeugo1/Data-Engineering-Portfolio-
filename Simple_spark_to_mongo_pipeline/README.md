@@ -13,6 +13,23 @@ Persisted into MongoDB as the final sink
 
 This project serves as the foundation for later streaming pipelines and proves the cluster is production-capable
 
+## Pipeline Structure
+
+* Airflow DAG:
+  * Trigger batch job
+  * Performs validation checks
+  * Submits Spark jobs using spark-submit
+
+* Spark Batch Job
+  * Reads source data
+  * Applies schema enforcement
+  * Writes final documents to MongoDB
+
+* MongoDB Sink
+  * Stores transformed documents
+  * Indexed for query efficiency
+  * Used later as a streaming source
+
 ## ✅ Key Leason:
   
 * Learned to use the correct connector
