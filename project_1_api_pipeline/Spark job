@@ -1,0 +1,27 @@
+from pyspark.sql import SparkSession
+
+spark = (
+    SparkSession.builder
+    .appName("spark-to-mongo")
+    .config("spark.mongodb.write.connection.uri", "mongodb://192.168.0.100:27017")
+    .getOrCreate()
+)
+
+data = [
+    (1, "Alice", 100),
+    (2, "Bob", 200),
+    (3, "Charlie", 300),
+]
+
+df = spark.createDataFrame(data, ["_id", "name", "value"])
+
+(
+    df.write
+    .format("mongodb")
+    .mode("append")
+    .option("database", "datahome")
+    .option("collection", "spark_output")
+    .save()
+)
+
+spark.stop()
