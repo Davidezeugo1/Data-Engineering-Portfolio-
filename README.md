@@ -1,6 +1,6 @@
 # Data Engineering Portfolio
 
-👋 Hi, I'm **David Ezeugo** — a data engineer focused on designing, building, and operating **production-grade datapipeline platforms** that support reliable batch and streaming.
+👋 Hi, I'm **David Ezeugo** — a data engineer focused on designing, building, and operating **production-grade data pipeline platforms** that support reliable batch and streaming.
 
 This repository documents both **individual data pipelines** and the **underlying cluster infrastructure** that powers them. The goal is to demonstrate not just how data moves, but **how real-world data systems are designed, operated, and scaled**.
 
