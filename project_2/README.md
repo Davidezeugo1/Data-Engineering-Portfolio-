@@ -15,11 +15,11 @@ This project represents the transition from batch processing to event-driven arc
   * Ensures replayability and fault tolerance
 
 * Spark Structured Streaming
- * Reads Kafka topic
- * Parses MongoDB change events
- * Filters relevant operation types
- * Extracts fullDocument
- * Converts timestamps
+  * Reads Kafka topic
+  * Parses MongoDB change events
+  * Filters relevant operation types
+  * Extracts fullDocument
+  * Converts timestamps
 
 * MySQL Sink
   * Written using foreachBatch
