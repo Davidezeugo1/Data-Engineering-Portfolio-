@@ -2,7 +2,7 @@
 
 👋 Hi, I'm **David Ezeugo** — a data engineer focused on designing, building, and operating **production-grade data pipeline platforms** that support reliable batch and streaming.
 
-This repository documents both **individual data pipelines** and the **underlying cluster infrastructure** that powers them. The goal is to demonstrate not just how data moves, but **how real-world data systems are designed, operated, and scaled**.
+This repository documents both **individual data pipelines** and the **underlying cluster infrastructure** that powers them. The goal is to demonstrate not just how data moves, but **how real-world data systems are designed, operated, and scaled**. 
 
 ---
 
@@ -14,6 +14,7 @@ This portfolio is backed by a **3-node Ubuntu cluster** built without Docker or 
 * Easier debugging
 * Production realism
 * Native Spark and Kafka performance
+* Backup of the system services
 
 The cluster serves as a **shared execution environment** for all current and future pipelines.
 
@@ -91,15 +92,16 @@ Each project will run on the shared cluster and follow production-oriented patte
 
 | Project              | Description                                     | Stack                                    |
 | -------------------- | ----------------------------------------------- | ---------------------------------------- |
-| Weather ETL          | Scheduled API ingestion into relational storage | Airflow, Python, MySQL                   |
-| NYC Taxi Data Lake   | Batch analytics using Spark and Parquet         | Spark, Parquet, MySQL                    |
-| Crypto Streaming     | Real-time ingestion and processing pipeline     | Kafka, Spark Structured Streaming, MySQL |
-| Retail Data Platform | Multi-source analytics platform                 | Airflow, Spark, Kafka, MinIO             |
+| [Simple_spark_to_mongo_pipeline](https://github.com/Davidezeugo1/Data-Engineering-Portfolio-/tree/c7870a2af9a95ab93369cc847d15685ac22f7bd6/Simple_spark_to_mongo_pipeline) | Tragger job to read a simple dataframe and write that dataframe to MongoDB using sparksubmit | Airflow, Python, Mongo, Spark                   |
+| Simple streaming pipeline   | A simple streaming pipeline from where data from MongoDB is sent to Kafka, to Spark, then lastly to a MySQL sink. | Kafka, Spark Structured Streaming, MySQL                    |
+| N/A     | N/A     | N/A |
+| N/A | N/A | N/A   |
 
 > All pipelines are designed to coexist on the same cluster, demonstrating shared infrastructure usage and operational maturity.
 
----
 
+---
+  
 ## 🔐 Production-Grade Design Principles
 
 My goal for this platform is to emphasize:
