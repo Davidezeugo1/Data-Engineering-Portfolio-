@@ -30,13 +30,13 @@ Datalog.debug('LOGGING TRUNCATE.PY:')
 conn = psycopg2.connect(
     host='host.docker.internal',
     database="postsqldb",
-    user='postgres',
-    password='Davvysql#1'
+    user='******',
+    password='*******'
 )
 
 myconn= mysql.connector.connect( 
-    user='root',
-    password='Davvysql#1',
+    user='*****',
+    password='*******',
     host='host.docker.internal',
     database='sqldb',
     ssl_disabled=True
@@ -86,5 +86,6 @@ Datalog.info(f'The rowcounts in MYSQL tables after TRUNCATE: {sqlcount}')
 query2='''SELECT count(*) as postgrerowcount from amountsum, amounttime;'''
 postcount=pd.read_sql(query2, con=engine)
 Datalog.info(f'The rowcounts in POSTGRESQL tables after TRUNCATE: {postcount}')
+
 
 logging.debug('Query count of rows in tables for MYSQL and POSTGRESQL')
