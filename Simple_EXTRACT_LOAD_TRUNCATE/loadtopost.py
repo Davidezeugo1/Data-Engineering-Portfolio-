@@ -37,13 +37,13 @@ Datalog.debug('Logging started For LOADTOPOST.PY:')
 conn = psycopg2.connect(
     host='host.docker.internal',
     database="postsqldb",
-    user='postgres',
-    password='Davvysql#1'
+    user='******',
+    password='******'
 )
 
 myconn= mysql.connector.connect( 
-    user='root',
-    password='Davvysql#1',
+    user='******',
+    password='*******',
     host='host.docker.internal',
     database='sqldb',
     ssl_disabled=True
@@ -119,4 +119,5 @@ logging.debug('Close both mycur and postcur.')
 conn.close()
 myconn.close()
 logging.debug('Both MySQL and POSTGRESQL Connection closed')
+
 
