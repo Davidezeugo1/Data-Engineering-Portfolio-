@@ -33,8 +33,8 @@ Datalog.info("DATALOG FILE CREATED")
 
 #create the mysql connection 
 conn= mysql.connector.connect( 
-    user='root',
-    password='Davvysql#1',
+    user='******',
+    password='******',
     host='host.docker.internal',
     database='sqldb',
     ssl_disabled=True
@@ -105,4 +105,5 @@ cursor.close()
 logging.debug('Cursor closed')
 
 conn.close()    
+
 logging.debug('Connection closed')
