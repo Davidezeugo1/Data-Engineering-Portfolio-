@@ -7,47 +7,40 @@ The pipeline demonstrates how data is:
 
 Orchestrated with Apache Airflow
 
-Processed using Apache Spark (batch mode)
+Processed and transformed using Apache Spark
 
-Persisted into MongoDB 
+Persisted into MongoDB and MYSQL 
 
-Tranisfromed in spark 
+visualized in dashborad.
 
-strong in MySQL for analytical dashboards.  
-
-This project serves as the foundation for later streaming pipelines and proves the cluster is production-capable
 
 ## Pipeline Structure
 
 * Airflow DAG:
-  * Trigger batch job
-  * Performs validation checks
-  * Submits Spark jobs using spark-submit
+  * Trigger job to generate data and persist data into the database (MongoDB)
+  * Submits Spark jobs using spark-submit to handle transformations
 
 * Spark Batch Job
   * Reads source data
   * Applies schema enforcement
-  * Writes final documents to MongoDB
+  * Writes final documents to MYSQL
 
 * MongoDB Sink
-  * Stores transformed documents
-  * Indexed for query efficiency
-  * Used later as a streaming source
-
-## ✅ Key Leason:
-  
-* Learned to use the correct connector
-* Learned to version control
-* Learned to create the coonection for airflow to spark
-* Learned to debug spark error
+  * Stores raw data
+    
+* MySQL
+  * Stores transformed data
+  * accessible by a BI tool for analytical processes. 
 
 
 ## ✅ Key Achievements:
-* Fully working multi-node Spark cluster
+* Fully working OTPL pipeline
 
-* Airflow successfully triggering Spark jobs
+* Airflow successfully triggering Python and Spark jobs
 
-* Reliable data ingestion into MongoDB
+* Reliable data ingestion into MongoDB and MYSQL
+
+* Accessible with BI tools to create dashboards 
 
 ## DAG:
-* spark_to_mongo can be found active on the airflow UI ** http://192.168.0.100:8085/home/  
+* (Name for dag here) can be found active on the airflow UI ** http://192.168.0.100:8085/home/  
