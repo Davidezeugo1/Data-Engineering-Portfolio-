@@ -51,7 +51,3 @@ This project serves as the foundation for later streaming pipelines and proves t
 
 ## DAG:
 * spark_to_mongo can be found active on the airflow UI ** http://192.168.0.100:8085/home/  
-
-
-
-Project details coming soon.
